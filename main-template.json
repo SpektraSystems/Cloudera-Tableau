@@ -24,7 +24,7 @@
     "variables": {
         "AzureSubscriptionID": "[subscription().subscriptionId]",
         "AzureActiveDirectoryTenantID": "[subscription().tenantId]",
-        "scriptsUri": "https://raw.githubusercontent.com/sysgain/cloudera-spectra-vip-new/master/",
+        "scriptsUri": "https://raw.githubusercontent.com/SpektraSystems/Cloudera-Tableau/master/",
         "share-resourcesUri": "[concat(variables('scriptsUri'), 'nested/shared-resources-new-vnet.json')]",
         "vnetUri": "[concat(variables('scriptsUri'), 'nested/update-new-vnet-dns.json')]",
         "networkRestartUri": "[concat(variables('scriptsUri'), 'nested/network-restart-new-vnet.json')]",
@@ -58,12 +58,12 @@
             "hostFqdnSuffix": "[variables('dnsNameSuffix')]",
             "dbAddress": "10.3.0.4",
             "dbUsername": "dbadmin",
-            "dbPassword": "Sysgain@1234",
+            "dbPassword": "Password@123",
             "masterType": "Standard_DS13",
             "workerType": "Standard_DS13",
             "edgeType": "Standard_DS13",
             "dirUsername": "cloudera",
-            "dirPassword": "Sysgain@1234"
+            "dirPassword": "Password@123"
         },
         "userInfo": {
             "company": "[variables('company')]",
@@ -77,9 +77,9 @@
         "vmSpec": {
             "vmSize": "Standard_DS12_v2",
             "adminUsername": "cloudera",
-            "adminPassword": "Sysgain@1234",
+            "adminPassword": "Password@123",
             "dbUsername": "dbadmin",
-            "dbPassword": "Sysgain@1234"
+            "dbPassword": "Password@123"
         },
         "networkSpec": {
             "addressPrefix": "[variables('addressPrefix')]",
